@@ -1,0 +1,58 @@
+﻿@model DeveloperTest_ThomasParfitt.Models.Reservations
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reservations</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle1.VehicleType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle1.VehicleType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingNr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingNr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustDoB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustDoB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarMilage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarMilage)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
